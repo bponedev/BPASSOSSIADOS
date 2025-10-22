@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bruno Pessôa Advogados Associados | Escritório Jurídico</title>
+  <meta name="description" content="Bruno Pessôa Advogados Associados - Escritório de advocacia no Rio de Janeiro.">
+  <link rel="canonical" href="https://www.bpadvogadosassociados.com.br/">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Leaflet CSS (map) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+  <!-- Principal CSS do site (local) -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-content">
+      <div class="logo">
+        <img src="images/logo.png" alt="Bruno Pessôa Advogados Associados" class="logo-img">
+        <span>Bruno Pessôa Advogados Associados</span>
+      </div>
+      <nav class="main-nav">
+        <a href="#inicio">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#atuacao">Áreas de Atuação</a>
+        <a href="#equipe">Equipe</a>
+        <a href="#escritorios">Escritórios</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <div class="hero-overlay container">
+        <h1>Excelência em Advocacia e Consultoria Jurídica</h1>
+        <p>Atuação sólida em diversas áreas do Direito, com escritórios no Rio de Janeiro.</p>
+        <a href="#contato" class="btn-primary">Agende sua consulta</a>
+      </div>
+    </section>
+
+    <section id="sobre" class="section">
+      <div class="container">
+        <h2>Sobre o Escritório</h2>
+        <p>Bruno Pessôa Advogados Associados atua há mais de 10 anos oferecendo soluções jurídicas personalizadas e eficazes.</p>
+      </div>
+    </section>
+
+    <section id="atuacao" class="section-light">
+      <div class="container">
+        <h2>Áreas de Atuação</h2>
+        <div class="stats-grid">
+          <div class="stat-card"><h3>Direito Civil</h3><p>Contratos, responsabilidade civil e mais.</p></div>
+          <div class="stat-card"><h3>Direito Trabalhista</h3><p>Defesa e consultoria para empresas e empregados.</p></div>
+          <div class="stat-card"><h3>Previdenciário</h3><p>Aposentadorias, pensões e benefícios.</p></div>
+          <div class="stat-card"><h3>Empresarial</h3><p>Assessoria jurídica para empresas de diversos setores.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="equipe" class="section">
+      <div class="container">
+        <h2>Equipe</h2>
+        <p>Contamos com uma equipe de advogados especializados, comprometidos em garantir o melhor resultado para cada cliente.</p>
+      </div>
+    </section>
+
+    <section id="escritorios" class="offices">
+      <div class="container">
+        <h1>Nossos Escritórios</h1>
+        <p class="subtitle">Estamos presentes em diversos lugares para melhor atendê-lo</p>
+        <div class="map-and-cards">
+          <div id="map" aria-label="Mapa com localização dos escritórios"></div>
+          <div class="offices-list" id="offices-list" aria-live="polite"></div>
+        </div>
+      </div>
+      <!-- Scripts no final do section para carregamento diferido -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js" defer></script>
+      <script src="js/map.js" defer></script>
+    </section>
+
+    <section id="contato" class="section">
+      <div class="container">
+        <h2>Contato</h2>
+        <ul class="contact-list">
+          <li><i class="fas fa-phone"></i> (21) 98266-9028</li>
+          <li><i class="fas fa-envelope"></i> pessoa_adv@yahoo.com.br</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 Bruno Pessôa Advogados Associados — Todos os direitos reservados</p>
+  </footer>
+</body>
+</html>
